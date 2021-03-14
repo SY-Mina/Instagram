@@ -2,8 +2,9 @@
     <string name="app_name">InstagramApp</string>
 
     <!-- Main -->
-    <string name="main_btm_nav_home_title">홈</string>
-    <string name="main_btm_nav_my_page_title">마이페이지</string>
+    <string name="main_btm_nav_home_title"></string>
+    <string name="main_btm_nav_search_title"></string>
+    <string name="main_btm_nav_my_page_title"></string>
 
     <!-- Home -->
     <string name="home_btn_try_get_http_method">GET API 보내기</string>

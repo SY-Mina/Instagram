@@ -4,7 +4,57 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".src.main.MainActivity">
+    android:background="@color/white"
+    >
+
+    <Toolbar
+        android:id="@+id/main_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:orientation="horizontal"
+        app:layout_constraintTop_toTopOf="parent"
+        android:background="@color/white">
+
+        <ImageView
+            android:layout_width="140dp"
+            android:layout_height="50dp"
+            android:src="@drawable/insta_logo"
+            android:layout_gravity="start"/>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="end"
+            android:orientation="horizontal">
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/btn_main_plus"
+                android:layout_width="50dp"
+                android:layout_height="wrap_content"
+                android:src="@drawable/btn_plus"
+                android:scaleType="center"
+                android:clickable="true"/>
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/btn_main_heart"
+                android:layout_width="50dp"
+                android:layout_height="wrap_content"
+                android:src="@drawable/btn_heart"
+                android:scaleType="center"
+                android:clickable="true" />
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/btn_main_dm"
+                android:layout_width="50dp"
+                android:layout_height="wrap_content"
+                android:src="@drawable/btn_dm"
+                android:scaleType="center"
+                android:clickable="true" />
+        </LinearLayout>
+
+    </Toolbar>
+
+
 
     <FrameLayout
         android:id="@+id/main_frm"
@@ -15,9 +65,10 @@
     <com.google.android.material.bottomnavigation.BottomNavigationView
         android:id="@+id/main_btm_nav"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="80dp"
         android:background="@color/white"
         app:itemBackground="@color/white"
+        app:itemIconSize="60dp"
         app:itemIconTint="@drawable/main_btm_nav_item_color"
         app:itemTextColor="@drawable/main_btm_nav_item_color"
         app:labelVisibilityMode="labeled"

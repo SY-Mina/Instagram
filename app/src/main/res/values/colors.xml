@@ -10,9 +10,11 @@
 
     <color name="colorPrimary">#fcfcfc</color>
     <color name="colorPrimaryDark">#889dfe</color>
-    <color name="colorAccent">#889dfe</color>
+    <color name="colorAccent">#FF000000</color>
 
     <color name="whiteForBackground">#FFFFFF</color>
     <color name="blackForText">#4a4a4a</color>
     <color name="redForText">#d9534f</color>
+
+    <color name="blueForText">#47B6FF</color>
 </resources>
