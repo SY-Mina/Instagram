@@ -15,7 +15,9 @@
         android:background="@drawable/edittext_grey"
         android:layout_marginLeft="15dp"
         android:layout_marginRight="15dp"
-        android:hint="    이메일"/>
+        android:hint="이메일"
+        android:padding="15dp"
+        android:inputType="textEmailAddress"/>
 
     <androidx.appcompat.widget.AppCompatButton
         android:id="@+id/btn_signup_email_next"

@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <ImageView
+        android:id="@+id/iv_add_img"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:src="@drawable/add_img"
+        android:layout_marginTop="20dp"
+        app:layout_constraintTop_toTopOf="parent"/>
+
+    <TextView
+        android:id="@+id/tv_add_img"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="프로필 사진 추가"
+        android:textColor="@color/black"
+        android:textSize="30sp"
+        android:textAlignment="center"
+        app:layout_constraintTop_toBottomOf="@id/iv_add_img"
+        android:layout_marginTop="15dp"/>
+
+    <TextView
+        android:id="@+id/tv_img_info"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="친구들이 알아볼 수 있도록 프로필 사진을 추가하세요."
+        android:textColor="@color/blackForText"
+        android:textSize="15sp"
+        android:textAlignment="center"
+        app:layout_constraintTop_toBottomOf="@id/tv_add_img"
+        android:layout_marginTop="15dp"/>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btn_add_img"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        app:layout_constraintTop_toBottomOf="@id/tv_img_info"
+        android:background="@color/blueForText"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:text="사진 추가"
+        android:textColor="@color/white"
+        android:textSize="18sp"
+        android:textStyle="bold"/>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btn_img_next"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        app:layout_constraintTop_toBottomOf="@id/btn_add_img"
+        android:background="@color/white"
+        android:text="건너뛰기"
+        android:textColor="@color/blueForText"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:layout_marginTop="15dp"
+        android:stateListAnimator="@null"/>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

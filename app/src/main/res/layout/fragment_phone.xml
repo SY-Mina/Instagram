@@ -43,8 +43,11 @@
             android:layout_height="match_parent"
             app:layout_constraintStart_toEndOf="@id/view_divide"
             app:layout_constraintEnd_toEndOf="parent"
-            android:hint="    휴대폰"
-            android:background="@android:color/transparent"/>
+            android:hint="휴대폰"
+            android:padding="15dp"
+            android:background="@android:color/transparent"
+            android:inputType="phone"
+            android:maxLength="11"/>
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 
