@@ -11,8 +11,10 @@
     <string name="home_btn_try_post_http_method">POST API 보내기</string>
     <string name="home_et_id">아이디를 입력하세요.</string>
     <string name="home_et_pw">비밀번호를 입력하세요.</string>
-
+S
     <!-- MyPage -->
     <string name="my_page_tv_counter">%1d 번 눌렀습니다.</string>
     <string name="my_page_btn_counting_number">숫자 세기</string>
+
+    <string name="facebook_app_key">771209540442927</string>
 </resources>
