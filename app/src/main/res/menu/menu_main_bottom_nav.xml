@@ -4,7 +4,7 @@
 
     <item
         android:id="@+id/menu_main_btm_nav_home"
-        android:icon="@drawable/home"
+        android:icon="@drawable/home2"
         app:showAsAction="always"
         android:enabled="true"
         android:checkable="true"
@@ -12,7 +12,15 @@
 
     <item
         android:id="@+id/menu_main_btm_nav_search"
-        android:icon="@drawable/search2"
+        android:icon="@drawable/search"
+        app:showAsAction="always"
+        android:enabled="true"
+        android:checkable="true"
+        android:title="@string/main_btm_nav_search_title" />
+
+    <item
+        android:id="@+id/menu_main_btm_nav_shop"
+        android:icon="@drawable/shop"
         app:showAsAction="always"
         android:enabled="true"
         android:checkable="true"
@@ -20,7 +28,7 @@
 
     <item
         android:id="@+id/menu_main_btm_nav_my_page"
-        android:icon="@drawable/my2"
+        android:icon="@drawable/user"
         app:showAsAction="always"
         android:enabled="true"
         android:checkable="true"

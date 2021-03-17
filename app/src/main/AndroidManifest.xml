@@ -43,11 +43,11 @@
             android:screenOrientation="portrait"
             android:theme="@style/AppTheme.NoActionBar" />
         <activity
-            android:name=".src.main.login.SignupActivity"
+            android:name=".src.main.signin.SignupActivity"
             android:screenOrientation="portrait"
             android:theme="@style/AppTheme.NoActionBar" />
         <activity
-            android:name=".src.main.login.Signup2Activity"
+            android:name="com.example.instagramapp.src.main.signup2.Signup2Activity"
             android:screenOrientation="portrait"
             android:theme="@style/AppTheme.NoActionBar" />
         <activity
