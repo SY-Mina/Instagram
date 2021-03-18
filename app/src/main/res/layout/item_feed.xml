@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <ImageView
+        android:id="@+id/img_profile"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:src="@drawable/img1"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="10dp"/>
+
+    <TextView
+        android:id="@+id/tv_id"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Name"
+        android:textColor="@color/black"
+        android:textSize="15sp"
+        app:layout_constraintStart_toEndOf="@id/img_profile"
+        app:layout_constraintTop_toTopOf="@id/img_profile"
+        app:layout_constraintBottom_toBottomOf="@id/img_profile"
+        app:layout_constraintVertical_bias="0.7"
+        android:layout_marginLeft="10dp"/>
+
+    <androidx.appcompat.widget.AppCompatImageButton
+        android:id="@+id/btn_more"
+        android:layout_width="50dp"
+        android:layout_height="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/img_feed"
+        android:src="@drawable/btn_more"
+        android:background="@color/white"
+        android:scaleType="centerInside"/>
+
+    <ImageView
+        android:id="@+id/img_feed"
+        android:layout_width="match_parent"
+        android:layout_height="400dp"
+        android:scaleType="fitXY"
+        android:src="@drawable/img1"
+        app:layout_constraintTop_toBottomOf="@id/img_profile"
+        android:layout_marginTop="10dp"/>
+
+    <LinearLayout
+        android:id="@+id/feed_btns"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/img_feed"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginTop="8dp"
+        android:layout_marginLeft="10dp">
+
+        <androidx.appcompat.widget.AppCompatImageButton
+            android:id="@+id/btn_feed_heart"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:src="@drawable/btn_heart"
+            android:background="@color/white"
+            android:padding="2dp"
+            android:scaleType="center"/>
+
+        <androidx.appcompat.widget.AppCompatImageButton
+            android:id="@+id/btn_feed_comment"
+            android:layout_width="40dp"
+            android:layout_height="30dp"
+            android:src="@drawable/comment"
+            android:layout_marginLeft="5dp"
+            android:padding="3dp"
+            android:background="@color/white"
+            android:scaleType="fitCenter"/>
+
+        <androidx.appcompat.widget.AppCompatImageButton
+            android:id="@+id/btn_feed_send"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:src="@drawable/btn_dm"
+            android:layout_marginLeft="5dp"
+            android:padding="2dp"
+            android:background="@color/white"
+            android:scaleType="center"/>
+
+    </LinearLayout>
+
+    <androidx.appcompat.widget.AppCompatImageButton
+        android:id="@+id/btn_feed_bookmark"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/img_feed"
+        android:src="@drawable/btn_bookmark"
+        android:scaleType="fitCenter"
+        android:padding="10dp"
+        android:background="@color/white"/>
+    
+    <TextView
+        android:id="@+id/tv_feed_content"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/feed_btns"
+        android:text="contents"
+        android:textColor="@color/black"
+        android:textSize="15sp"
+        android:layout_marginLeft="15dp"/>
+
+    <TextView
+        android:id="@+id/tv_feed_comment_id"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="@id/tv_feed_content"
+        app:layout_constraintTop_toBottomOf="@id/tv_feed_content"
+        android:layout_marginTop="5dp"
+        android:text="Name"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        android:textSize="15sp"/>
+
+    <TextView
+        android:id="@+id/tv_feed_comment"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toEndOf="@id/tv_feed_comment_id"
+        app:layout_constraintBottom_toBottomOf="@id/tv_feed_comment_id"
+        android:layout_marginLeft="10dp"
+        android:text="Comment.."
+        android:textColor="@color/black"
+        android:textSize="15sp"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

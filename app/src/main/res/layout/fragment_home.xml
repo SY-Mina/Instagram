@@ -23,43 +23,11 @@
         </LinearLayout>
     </HorizontalScrollView>
 
-    <androidx.appcompat.widget.AppCompatButton
-        android:id="@+id/home_button_try_get_jwt"
-        android:layout_width="wrap_content"
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/main_rv_feed"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_gravity="center"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toBottomOf="@id/main_stories"
-        android:text="@string/home_btn_try_get_http_method" />
+        app:layout_constraintBottom_toBottomOf="parent"/>
 
-    <EditText
-        android:id="@+id/home_et_id"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="20dp"
-        android:hint="@string/home_et_id"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/home_button_try_get_jwt"/>
-
-    <EditText
-        android:id="@+id/home_et_pw"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:hint="@string/home_et_pw"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/home_et_id"/>
-
-    <androidx.appcompat.widget.AppCompatButton
-        android:id="@+id/home_btn_try_post_http_method"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_gravity="center"
-        android:layout_marginTop="10dp"
-        android:text="@string/home_btn_try_post_http_method"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/home_et_pw"/>
 </androidx.constraintlayout.widget.ConstraintLayout>
