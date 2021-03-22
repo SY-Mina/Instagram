@@ -43,9 +43,17 @@
         android:layout_width="match_parent"
         android:layout_height="400dp"
         android:scaleType="fitXY"
-        android:src="@drawable/img1"
         app:layout_constraintTop_toBottomOf="@id/img_profile"
-        android:layout_marginTop="10dp"/>
+        android:layout_marginTop="10dp"
+        android:src="@drawable/img1"/>
+
+<!--    <androidx.viewpager.widget.ViewPager-->
+<!--        android:id="@+id/vp_img_feed"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="400dp"-->
+<!--        android:scaleType="fitXY"-->
+<!--        app:layout_constraintTop_toBottomOf="@id/img_profile"-->
+<!--        android:layout_marginTop="10dp"/>-->
 
     <LinearLayout
         android:id="@+id/feed_btns"
@@ -53,14 +61,14 @@
         android:layout_height="wrap_content"
         app:layout_constraintTop_toBottomOf="@id/img_feed"
         app:layout_constraintStart_toStartOf="parent"
-        android:layout_marginTop="8dp"
+        android:layout_marginTop="10dp"
         android:layout_marginLeft="10dp">
 
         <androidx.appcompat.widget.AppCompatImageButton
             android:id="@+id/btn_feed_heart"
             android:layout_width="40dp"
             android:layout_height="40dp"
-            android:src="@drawable/btn_heart"
+            android:src="@drawable/heart_btn"
             android:background="@color/white"
             android:padding="2dp"
             android:scaleType="center"/>
@@ -68,18 +76,18 @@
         <androidx.appcompat.widget.AppCompatImageButton
             android:id="@+id/btn_feed_comment"
             android:layout_width="40dp"
-            android:layout_height="30dp"
-            android:src="@drawable/comment"
+            android:layout_height="40dp"
+            android:src="@drawable/comment_btn2"
             android:layout_marginLeft="5dp"
-            android:padding="3dp"
+            android:padding="2dp"
             android:background="@color/white"
-            android:scaleType="fitCenter"/>
+            android:scaleType="center"/>
 
         <androidx.appcompat.widget.AppCompatImageButton
             android:id="@+id/btn_feed_send"
             android:layout_width="40dp"
             android:layout_height="40dp"
-            android:src="@drawable/btn_dm"
+            android:src="@drawable/send"
             android:layout_marginLeft="5dp"
             android:padding="2dp"
             android:background="@color/white"
@@ -93,8 +101,9 @@
         android:layout_height="40dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toBottomOf="@id/img_feed"
-        android:src="@drawable/btn_bookmark"
-        android:scaleType="fitCenter"
+        android:layout_marginTop="10dp"
+        android:src="@drawable/bm_btn"
+        android:scaleType="center"
         android:padding="10dp"
         android:background="@color/white"/>
     

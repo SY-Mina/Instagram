@@ -1,0 +1,256 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/white">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/edit_prof_top"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/btn_edit_back"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:text="취소"
+                android:textSize="15sp"
+                android:textColor="@color/black"
+                android:background="@color/white"
+                android:textAlignment="viewStart"
+                android:stateListAnimator="@null"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="7"
+                android:text="프로필 편집"
+                android:textColor="@color/black"
+                android:textSize="15sp"
+                android:textStyle="bold"
+                android:gravity="center_vertical|center_horizontal"/>
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/btn_edit_done"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:text="완료"
+                android:textSize="15sp"
+                android:textColor="@color/blueForText"
+                android:textAlignment="viewEnd"
+                android:background="@color/white"
+                android:layout_marginRight="15dp"
+                android:stateListAnimator="@null"/>
+
+        </LinearLayout>
+    </androidx.appcompat.widget.Toolbar>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#DEDEDE"
+        app:layout_constraintTop_toBottomOf="@id/edit_prof_top"/>
+
+    <androidx.appcompat.widget.AppCompatImageButton
+        android:id="@+id/btn_change_profImg"
+        android:layout_width="match_parent"
+        android:layout_height="120dp"
+        android:src="@drawable/prof"
+        android:scaleType="centerInside"
+        android:background="@color/white"
+        app:layout_constraintTop_toBottomOf="@id/edit_prof_top"
+        android:layout_marginTop="15dp"/>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btn_change_profImg_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="프로필 사진 바꾸기"
+        android:textSize="15sp"
+        android:textColor="@color/blueForText"
+        android:background="@color/white"
+        app:layout_constraintTop_toBottomOf="@id/btn_change_profImg"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:stateListAnimator="@null"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#DEDEDE"
+        app:layout_constraintTop_toBottomOf="@id/btn_change_profImg_text"
+        />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/layouts"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        app:layout_constraintTop_toBottomOf="@id/btn_change_profImg_text">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/layout_name"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            app:layout_constraintTop_toTopOf="parent">
+            <TextView
+                android:id="@+id/tv_edit_name"
+                android:layout_width="70dp"
+                android:layout_height="wrap_content"
+                android:text="이름"
+                android:textColor="@color/black"
+                android:layout_marginLeft="20dp"
+                android:textSize="18dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintBottom_toBottomOf="parent"/>
+
+            <EditText
+                android:id="@+id/et_edit_name"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                app:layout_constraintStart_toEndOf="@id/tv_edit_name"
+                app:layout_constraintEnd_toEndOf="parent"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="20dp"
+                android:backgroundTint="#DEDEDE"/>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/layout_id"
+            app:layout_constraintTop_toBottomOf="@id/layout_name"
+            android:layout_width="match_parent"
+            android:layout_height="50dp">
+            <TextView
+                android:id="@+id/tv_edit_id"
+                android:layout_width="70dp"
+                android:layout_height="wrap_content"
+                android:text="사용자\n이름"
+                android:textColor="@color/black"
+                android:layout_marginLeft="20dp"
+                android:textSize="18dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintBottom_toBottomOf="parent"/>
+
+            <EditText
+                android:id="@+id/et_edit_id"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                app:layout_constraintStart_toEndOf="@id/tv_edit_id"
+                app:layout_constraintEnd_toEndOf="parent"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="20dp"
+                android:backgroundTint="#DEDEDE"/>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/layout_website"
+            app:layout_constraintTop_toBottomOf="@id/layout_id"
+            android:layout_width="match_parent"
+            android:layout_height="50dp">
+            <TextView
+                android:id="@+id/tv_edit_website"
+                android:layout_width="70dp"
+                android:layout_height="wrap_content"
+                android:text="웹사이트"
+                android:textColor="@color/black"
+                android:layout_marginLeft="20dp"
+                android:textSize="18dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintBottom_toBottomOf="parent"/>
+
+            <EditText
+                android:id="@+id/et_edit_website"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                app:layout_constraintStart_toEndOf="@id/tv_edit_website"
+                app:layout_constraintEnd_toEndOf="parent"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="20dp"
+                android:backgroundTint="#DEDEDE"/>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/layout_introduce"
+            app:layout_constraintTop_toBottomOf="@id/layout_website"
+            android:layout_width="match_parent"
+            android:layout_height="50dp">
+            <TextView
+                android:id="@+id/tv_edit_introduce"
+                android:layout_width="70dp"
+                android:layout_height="wrap_content"
+                android:text="소개"
+                android:textColor="@color/black"
+                android:layout_marginLeft="20dp"
+                android:textSize="18dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintBottom_toBottomOf="parent"/>
+
+            <EditText
+                android:id="@+id/et_edit_introduce"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                app:layout_constraintStart_toEndOf="@id/tv_edit_introduce"
+                app:layout_constraintEnd_toEndOf="parent"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="20dp"
+                android:backgroundTint="#DEDEDE"/>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#DEDEDE"
+        app:layout_constraintTop_toBottomOf="@id/layouts" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btn_convert"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:text="프로페셔널 계정으로 전환"
+        android:textSize="15sp"
+        android:textColor="@color/blueForText"
+        android:background="@color/white"
+        app:layout_constraintTop_toBottomOf="@id/layouts"
+        android:gravity="start|center_vertical"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="5dp"
+        android:stateListAnimator="@null"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#DEDEDE"
+        app:layout_constraintTop_toBottomOf="@id/btn_convert" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btn_private_info"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:text="개인 정보 설정"
+        android:textSize="15sp"
+        android:textColor="@color/blueForText"
+        android:background="@color/white"
+        app:layout_constraintTop_toBottomOf="@id/btn_convert"
+        android:gravity="start|center_vertical"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="2dp"
+        android:stateListAnimator="@null"/>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

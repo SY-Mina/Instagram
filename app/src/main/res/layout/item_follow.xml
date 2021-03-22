@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="100dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/white">
+
+    <ImageView
+        android:id="@+id/iv_follow_prof"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:src="@drawable/img1"
+        android:scaleType="centerInside"
+        android:layout_marginTop="15dp"
+        android:layout_marginLeft="15dp"/>
+
+    <TextView
+        android:id="@+id/tv_follow_id"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Id Name"
+        android:textColor="@color/black"
+        android:textSize="15sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toEndOf="@id/iv_follow_prof"
+        app:layout_constraintTop_toTopOf="@id/iv_follow_prof"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="20dp"/>
+
+    <TextView
+        android:id="@+id/tv_follow_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/tv_follow_id"
+        app:layout_constraintStart_toStartOf="@id/tv_follow_id"
+        android:text="Name"
+        android:textSize="15sp"
+        android:textColor="@color/blackForText"/>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btn_delete_follower"
+        android:layout_width="60dp"
+        android:layout_height="40dp"
+        android:text="삭제"
+        android:textSize="15sp"
+        android:textColor="@color/black"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:background="@drawable/round_button_white"
+        android:layout_marginRight="10dp"/>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -15,6 +15,7 @@
     <color name="whiteForBackground">#FFFFFF</color>
     <color name="blackForText">#4a4a4a</color>
     <color name="redForText">#d9534f</color>
+    <color name="blue">#0E2488</color>
 
     <color name="blueForText">#47B6FF</color>
 </resources>
