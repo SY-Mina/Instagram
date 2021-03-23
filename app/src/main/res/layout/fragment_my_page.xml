@@ -30,6 +30,7 @@
                 android:layout_height="wrap_content"
                 android:text="My Name"
                 android:textSize="30sp"
+                android:layout_marginLeft="20dp"
                 android:textColor="@color/black"/>
 
             <androidx.constraintlayout.widget.ConstraintLayout
