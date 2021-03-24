@@ -4,7 +4,7 @@
     android:layout_height="wrap_content"
     xmlns:app="http://schemas.android.com/apk/res-auto">
 
-    <ImageView
+    <com.mikhaellopez.circularimageview.CircularImageView
         android:id="@+id/img_profile"
         android:layout_width="50dp"
         android:layout_height="50dp"
@@ -31,12 +31,13 @@
         android:id="@+id/btn_more"
         android:layout_width="50dp"
         android:layout_height="20dp"
+        android:background="@color/white"
+        android:scaleType="centerInside"
+        android:src="@drawable/more"
+        app:layout_constraintBottom_toTopOf="@id/img_feed"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintBottom_toTopOf="@id/img_feed"
-        android:src="@drawable/btn_more"
-        android:background="@color/white"
-        android:scaleType="centerInside"/>
+        app:layout_constraintVertical_bias="0.32" />
 
     <ImageView
         android:id="@+id/img_feed"

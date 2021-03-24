@@ -5,7 +5,7 @@
     android:background="@color/white"
     xmlns:app="http://schemas.android.com/apk/res-auto">
 
-    <iv_following_prof
+    <com.mikhaellopez.circularimageview.CircularImageView
         android:id="@+id/iv_following_prof"
         android:layout_width="80dp"
         android:layout_height="80dp"

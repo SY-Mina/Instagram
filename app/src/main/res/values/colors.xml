@@ -18,4 +18,6 @@
     <color name="blue">#0E2488</color>
 
     <color name="blueForText">#47B6FF</color>
+
+    <color name="grey">#BEBEBE</color>
 </resources>
