@@ -111,182 +111,187 @@
 
             </androidx.constraintlayout.widget.ConstraintLayout>
 
-            <LinearLayout
-                android:layout_width="70dp"
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/rv_story"
+                android:layout_width="wrap_content"
                 android:layout_height="match_parent"
-                android:orientation="vertical"
-                android:layout_marginRight="10dp">
+                tools:listitem="@layout/item_story" />
+<!--            <LinearLayout-->
+<!--                android:layout_width="70dp"-->
+<!--                android:layout_height="match_parent"-->
+<!--                android:orientation="vertical"-->
+<!--                android:layout_marginRight="10dp">-->
 
-                <com.mikhaellopez.circularimageview.CircularImageView
-                    android:id="@+id/story1"
-                    android:layout_width="match_parent"
-                    android:layout_height="70dp"
-                    android:src="@drawable/prof"
-                    android:layout_gravity="center_horizontal"
-                    app:civ_border_width="1dp"/>
+<!--                <com.mikhaellopez.circularimageview.CircularImageView-->
+<!--                    android:id="@+id/story1"-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="70dp"-->
+<!--                    android:src="@drawable/prof"-->
+<!--                    android:layout_gravity="center_horizontal"-->
+<!--                    app:civ_border_width="1dp"/>-->
 
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="id1"
-                    android:textColor="@color/black"
-                    android:layout_gravity="center_horizontal"/>
+<!--                <TextView-->
+<!--                    android:layout_width="wrap_content"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:text="id1"-->
+<!--                    android:textColor="@color/black"-->
+<!--                    android:layout_gravity="center_horizontal"/>-->
 
-            </LinearLayout>
+<!--            </LinearLayout>-->
 
-            <LinearLayout
-                android:layout_width="70dp"
-                android:layout_height="match_parent"
-                android:orientation="vertical"
-                android:layout_marginRight="10dp">
+<!--            <LinearLayout-->
+<!--                android:layout_width="70dp"-->
+<!--                android:layout_height="match_parent"-->
+<!--                android:orientation="vertical"-->
+<!--                android:layout_marginRight="10dp">-->
 
-                <ImageView
-                    android:id="@+id/story2"
-                    android:layout_width="match_parent"
-                    android:layout_height="70dp"
-                    android:src="@drawable/prof"
-                    android:layout_gravity="center_horizontal"/>
+<!--                <ImageView-->
+<!--                    android:id="@+id/story2"-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="70dp"-->
+<!--                    android:src="@drawable/prof"-->
+<!--                    android:layout_gravity="center_horizontal"/>-->
 
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="id2"
-                    android:textColor="@color/black"
-                    android:layout_gravity="center_horizontal"/>
+<!--                <TextView-->
+<!--                    android:layout_width="wrap_content"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:text="id2"-->
+<!--                    android:textColor="@color/black"-->
+<!--                    android:layout_gravity="center_horizontal"/>-->
 
-            </LinearLayout>
+<!--            </LinearLayout>-->
 
-            <LinearLayout
-                android:layout_width="70dp"
-                android:layout_height="match_parent"
-                android:orientation="vertical"
-                android:layout_marginRight="10dp">
+<!--            <LinearLayout-->
+<!--                android:layout_width="70dp"-->
+<!--                android:layout_height="match_parent"-->
+<!--                android:orientation="vertical"-->
+<!--                android:layout_marginRight="10dp">-->
 
-                <ImageView
-                    android:id="@+id/story3"
-                    android:layout_width="match_parent"
-                    android:layout_height="70dp"
-                    android:src="@drawable/prof"
-                    android:layout_gravity="center_horizontal"/>
+<!--                <ImageView-->
+<!--                    android:id="@+id/story3"-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="70dp"-->
+<!--                    android:src="@drawable/prof"-->
+<!--                    android:layout_gravity="center_horizontal"/>-->
 
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="id3"
-                    android:textColor="@color/black"
-                    android:layout_gravity="center_horizontal"/>
+<!--                <TextView-->
+<!--                    android:layout_width="wrap_content"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:text="id3"-->
+<!--                    android:textColor="@color/black"-->
+<!--                    android:layout_gravity="center_horizontal"/>-->
 
-            </LinearLayout>
+<!--            </LinearLayout>-->
 
-            <LinearLayout
-                android:layout_width="70dp"
-                android:layout_height="match_parent"
-                android:orientation="vertical"
-                android:layout_marginRight="10dp">
+<!--            <LinearLayout-->
+<!--                android:layout_width="70dp"-->
+<!--                android:layout_height="match_parent"-->
+<!--                android:orientation="vertical"-->
+<!--                android:layout_marginRight="10dp">-->
 
-                <ImageView
-                    android:id="@+id/story4"
-                    android:layout_width="match_parent"
-                    android:layout_height="70dp"
-                    android:src="@drawable/prof"
-                    android:layout_gravity="center_horizontal"/>
+<!--                <ImageView-->
+<!--                    android:id="@+id/story4"-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="70dp"-->
+<!--                    android:src="@drawable/prof"-->
+<!--                    android:layout_gravity="center_horizontal"/>-->
 
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="id4"
-                    android:textColor="@color/black"
-                    android:layout_gravity="center_horizontal"/>
+<!--                <TextView-->
+<!--                    android:layout_width="wrap_content"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:text="id4"-->
+<!--                    android:textColor="@color/black"-->
+<!--                    android:layout_gravity="center_horizontal"/>-->
 
-            </LinearLayout>
+<!--            </LinearLayout>-->
 
-            <LinearLayout
-                android:layout_width="70dp"
-                android:layout_height="match_parent"
-                android:orientation="vertical"
-                android:layout_marginRight="10dp">
+<!--            <LinearLayout-->
+<!--                android:layout_width="70dp"-->
+<!--                android:layout_height="match_parent"-->
+<!--                android:orientation="vertical"-->
+<!--                android:layout_marginRight="10dp">-->
 
-                <ImageView
-                    android:id="@+id/story5"
-                    android:layout_width="match_parent"
-                    android:layout_height="70dp"
-                    android:src="@drawable/prof"
-                    android:layout_gravity="center_horizontal"/>
+<!--                <ImageView-->
+<!--                    android:id="@+id/story5"-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="70dp"-->
+<!--                    android:src="@drawable/prof"-->
+<!--                    android:layout_gravity="center_horizontal"/>-->
 
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="id5"
-                    android:textColor="@color/black"
-                    android:layout_gravity="center_horizontal"/>
+<!--                <TextView-->
+<!--                    android:layout_width="wrap_content"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:text="id5"-->
+<!--                    android:textColor="@color/black"-->
+<!--                    android:layout_gravity="center_horizontal"/>-->
 
-            </LinearLayout>
+<!--            </LinearLayout>-->
 
-            <LinearLayout
-                android:layout_width="70dp"
-                android:layout_height="match_parent"
-                android:orientation="vertical"
-                android:layout_marginRight="10dp">
+<!--            <LinearLayout-->
+<!--                android:layout_width="70dp"-->
+<!--                android:layout_height="match_parent"-->
+<!--                android:orientation="vertical"-->
+<!--                android:layout_marginRight="10dp">-->
 
-                <ImageView
-                    android:id="@+id/story6"
-                    android:layout_width="match_parent"
-                    android:layout_height="70dp"
-                    android:src="@drawable/prof"
-                    android:layout_gravity="center_horizontal"/>
+<!--                <ImageView-->
+<!--                    android:id="@+id/story6"-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="70dp"-->
+<!--                    android:src="@drawable/prof"-->
+<!--                    android:layout_gravity="center_horizontal"/>-->
 
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="id6"
-                    android:textColor="@color/black"
-                    android:layout_gravity="center_horizontal"/>
+<!--                <TextView-->
+<!--                    android:layout_width="wrap_content"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:text="id6"-->
+<!--                    android:textColor="@color/black"-->
+<!--                    android:layout_gravity="center_horizontal"/>-->
 
-            </LinearLayout>
+<!--            </LinearLayout>-->
 
-            <LinearLayout
-                android:layout_width="70dp"
-                android:layout_height="match_parent"
-                android:orientation="vertical"
-                android:layout_marginRight="10dp">
+<!--            <LinearLayout-->
+<!--                android:layout_width="70dp"-->
+<!--                android:layout_height="match_parent"-->
+<!--                android:orientation="vertical"-->
+<!--                android:layout_marginRight="10dp">-->
 
-                <ImageView
-                    android:id="@+id/story7"
-                    android:layout_width="match_parent"
-                    android:layout_height="70dp"
-                    android:src="@drawable/prof"
-                    android:layout_gravity="center_horizontal"/>
+<!--                <ImageView-->
+<!--                    android:id="@+id/story7"-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="70dp"-->
+<!--                    android:src="@drawable/prof"-->
+<!--                    android:layout_gravity="center_horizontal"/>-->
 
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="id7"
-                    android:textColor="@color/black"
-                    android:layout_gravity="center_horizontal"/>
+<!--                <TextView-->
+<!--                    android:layout_width="wrap_content"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:text="id7"-->
+<!--                    android:textColor="@color/black"-->
+<!--                    android:layout_gravity="center_horizontal"/>-->
 
-            </LinearLayout>
+<!--            </LinearLayout>-->
 
-            <LinearLayout
-                android:layout_width="70dp"
-                android:layout_height="match_parent"
-                android:orientation="vertical"
-                android:layout_marginRight="10dp">
+<!--            <LinearLayout-->
+<!--                android:layout_width="70dp"-->
+<!--                android:layout_height="match_parent"-->
+<!--                android:orientation="vertical"-->
+<!--                android:layout_marginRight="10dp">-->
 
-                <ImageView
-                    android:id="@+id/story8"
-                    android:layout_width="match_parent"
-                    android:layout_height="70dp"
-                    android:src="@drawable/prof"
-                    android:layout_gravity="center_horizontal"/>
+<!--                <ImageView-->
+<!--                    android:id="@+id/story8"-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="70dp"-->
+<!--                    android:src="@drawable/prof"-->
+<!--                    android:layout_gravity="center_horizontal"/>-->
 
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="id8"
-                    android:textColor="@color/black"
-                    android:layout_gravity="center_horizontal"/>
+<!--                <TextView-->
+<!--                    android:layout_width="wrap_content"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:text="id8"-->
+<!--                    android:textColor="@color/black"-->
+<!--                    android:layout_gravity="center_horizontal"/>-->
 
-            </LinearLayout>
+<!--            </LinearLayout>-->
 
         </LinearLayout>
     </HorizontalScrollView>

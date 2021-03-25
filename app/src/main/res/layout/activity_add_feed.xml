@@ -43,7 +43,7 @@
 
     </LinearLayout>
 
-    <androidx.appcompat.widget.AppCompatImageButton
+    <ImageView
         android:id="@+id/btn_add_feed_img"
         android:layout_width="100dp"
         android:layout_height="100dp"
