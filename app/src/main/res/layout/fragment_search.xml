@@ -22,9 +22,10 @@
             android:layout_marginRight="5dp"/>
 
         <androidx.appcompat.widget.AppCompatImageButton
-            android:layout_width="wrap_content"
+            android:layout_width="30dp"
             android:layout_height="match_parent"
             android:src="@drawable/camera"
+            android:scaleType="fitCenter"
             android:background="@color/white"
             android:layout_marginRight="8dp"/>
 
